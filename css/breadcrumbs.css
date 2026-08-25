@@ -1,0 +1,31 @@
+
+    /* 覆蓋 Bootstrap 預設的麵包屑分隔符 */
+    .breadcrumb-item+.breadcrumb-item::before {
+      display: none;
+      /* content: '>';
+      color: #6c757d;
+      padding-right: 0.5rem; */
+    }
+
+    .breadcrumb-item+.breadcrumb-item {
+      padding-left: var(--bs-breadcrumb-item-padding-x);
+      padding-top: 2px;
+    }
+
+    /* 如果要讓文字和箭頭對齊，可以調整一下樣式 */
+    .breadcrumb-item a {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    .breadcrumb {
+      --bs-breadcrumb-margin-bottom: 0;
+    }
+
+    .toggle-icon-position {
+      right: 40px;
+    }
+
+    .form-switch-position {
+      margin-left: 10px;
+    }
